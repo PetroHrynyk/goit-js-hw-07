@@ -36,7 +36,7 @@ function onGalleryItemClick(event) {
 let instance = {};
 
 function onBasicLightbox(imgUrl) {
-	instance = basicLightbox.create(`<img src="${imgUrl}" width="800" height="600">`, {
+	instance = basicLightbox.create(`<img src="${imgUrl}" >`, {
 		onShow: () => {
 			window.addEventListener("keydown", onEscKeyPress);
 		},
